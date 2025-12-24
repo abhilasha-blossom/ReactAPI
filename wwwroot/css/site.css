@@ -1,0 +1,152 @@
+/* Global Styles */
+:root {
+  --primary-color: #A2D2FF;
+  /* Baby Blue */
+  --secondary-color: #BDE0FE;
+  /* Pale Blue */
+  --accent-color: #FFAFCC;
+  /* Soft Pink Accent (optional, for contrast) */
+  --background-color: #F0F8FF;
+  /* Alice Blue */
+  --text-color: #555;
+  --card-bg: #ffffff;
+  --btn-color: #A2D2FF;
+  --nav-text: #fff;
+  --link-color: #7bb3e8;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff !important;
+  border-bottom: 3px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(162, 210, 255, 0.2);
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  color: var(--primary-color) !important;
+  font-size: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #888 !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Quicksand', sans-serif;
+  color: #89CFF0;
+  /* Slightly darker baby blue for text */
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Cards & Containers */
+.container {
+  max-width: 1140px;
+  padding-top: 40px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(162, 210, 255, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #89CFF0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(162, 210, 255, 0.6);
+}
+
+/* Tables */
+.table {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(162, 210, 255, 0.15);
+  /* Blue tinted shadow */
+  overflow: hidden;
+  border: none;
+}
+
+.table thead th {
+  background-color: var(--secondary-color);
+  color: #fff;
+  /* White text on blue header */
+  font-weight: 700;
+  border: none;
+  padding: 18px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #f0f8ff;
+}
+
+.table tbody tr:hover {
+  background-color: #E8F4FD;
+  /* Very light blue hover */
+}
+
+.table td {
+  padding: 18px;
+  color: #666;
+  vertical-align: middle;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #e0efff;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #a2d2ff;
+}

@@ -1,0 +1,27 @@
+@model MVC_EF2.Models.Movie
+
+<h2>Create Movie</h2>
+
+<form asp-controller="Movie" asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <label>Title</label>
+    <input asp-for="Title" />
+    <span asp-validation-for="Title"></span>
+
+    <br /><br />
+    
+    <label>Actors</label>
+    @if (ViewBag.Actors != null)
+    {
+        foreach (var actor in ViewBag.Actors as List<MVC_EF2.Models.Actor>)
+        {
+            <div>
+                <input type="checkbox" name="actorIds" value="@actor.ActorId" /> @actor.Name
+            </div>
+        }
+    }
+
+    <br /><br />
+    <button type="submit">Create</button>
+</form>
