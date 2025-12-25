@@ -16,6 +16,7 @@ namespace MVC_EF2.Models
         public DbSet<Actor> Actors { get; set; }
 
         public DbSet<MovieActor> MovieActors { get; set; }
+        public DbSet<Student> Students { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
